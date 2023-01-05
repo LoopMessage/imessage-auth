@@ -1,0 +1,6 @@
+framework module iMessageAuth {
+  umbrella header "iMessageAuth-umbrella.h"
+
+  export *
+  module * { export * }
+}

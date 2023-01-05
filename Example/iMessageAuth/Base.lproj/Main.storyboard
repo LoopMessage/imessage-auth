@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="Cow-Ec-7NX">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController storyboardIdentifier="ViewController" id="vXZ-lx-hvc" customClass="ViewController" customModule="iMessageAuth_Example" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rtK-EK-gbY">
+                                <rect key="frame" x="72" y="311.5" width="231" height="44"/>
+                                <color key="backgroundColor" red="0.14509803921568626" green="0.82745098039215681" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="oWA-7S-YBb"/>
+                                </constraints>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <inset key="contentEdgeInsets" minX="15" minY="0.0" maxX="15" maxY="0.0"/>
+                                <inset key="imageEdgeInsets" minX="-10" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                <state key="normal" title="Sign In with iMessage " image="ellipsis.message" catalog="system">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="signIn:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="NSe-tL-CGe"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Error Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FWC-hK-XZX">
+                                <rect key="frame" x="146" y="60" width="83.5" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="byF-yU-osY">
+                                <rect key="frame" x="46" y="529" width="283.5" height="122"/>
+                                <string key="text">1. Press the Sign In button
+2. Send auth code via iMessage
+3. Wait a few seconds until your auth code will be verified
+4. After successful auth you will be pushed to the next screen</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="rtK-EK-gbY" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="1iN-DB-4ct"/>
+                            <constraint firstItem="FWC-hK-XZX" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="16" id="2AV-KV-gS5"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="byF-yU-osY" secondAttribute="bottom" constant="16" id="5ha-RL-RMK"/>
+                            <constraint firstAttribute="trailingMargin" relation="greaterThanOrEqual" secondItem="FWC-hK-XZX" secondAttribute="trailing" constant="16" id="AHp-s8-cXb"/>
+                            <constraint firstItem="rtK-EK-gbY" firstAttribute="centerY" secondItem="kh9-bI-dsS" secondAttribute="centerY" id="EXg-1J-00y"/>
+                            <constraint firstItem="FWC-hK-XZX" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="FO2-N3-eN8"/>
+                            <constraint firstItem="byF-yU-osY" firstAttribute="top" relation="greaterThanOrEqual" secondItem="rtK-EK-gbY" secondAttribute="bottom" constant="16" id="L29-LA-UyT"/>
+                            <constraint firstItem="byF-yU-osY" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="Q28-Eb-WSU"/>
+                            <constraint firstAttribute="trailingMargin" relation="greaterThanOrEqual" secondItem="byF-yU-osY" secondAttribute="trailing" constant="16" id="fCS-nR-Kf0"/>
+                            <constraint firstItem="FWC-hK-XZX" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="16" id="xN7-e1-mgh"/>
+                            <constraint firstItem="byF-yU-osY" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="16" id="zzK-eo-5J5"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="orb-JY-NJK"/>
+                    <connections>
+                        <outlet property="errorLabel" destination="FWC-hK-XZX" id="3Pe-WM-M31"/>
+                        <outlet property="signInButton" destination="rtK-EK-gbY" id="f14-zA-L4e"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1079.2" y="0.44977511244377816"/>
+        </scene>
+        <!--Second View Controller-->
+        <scene sceneID="bEJ-9p-JlM">
+            <objects>
+                <viewController storyboardIdentifier="SecondViewController" id="MgZ-qP-5Du" customClass="SecondViewController" customModule="iMessageAuth_Example" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Leo-ar-Rhm"/>
+                        <viewControllerLayoutGuide type="bottom" id="66p-or-ucd"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ZnD-6L-xX6">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="I3Q-NK-qFn">
+                                <rect key="frame" x="167" y="10" width="41.5" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JbP-fQ-jLf">
+                                <rect key="frame" x="108.5" y="311.5" width="158" height="44"/>
+                                <color key="backgroundColor" red="0.1450980392" green="0.82745098039999998" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="Ms8-DO-Ovu"/>
+                                </constraints>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <inset key="contentEdgeInsets" minX="15" minY="0.0" maxX="15" maxY="0.0"/>
+                                <inset key="imageEdgeInsets" minX="-10" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                <state key="normal" title="Check Token" image="key.icloud" catalog="system">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="checkToken:" destination="MgZ-qP-5Du" eventType="touchUpInside" id="aoH-Ig-C7Z"/>
+                                </connections>
+                            </button>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="DS9-AP-XDS">
+                                <rect key="frame" x="177.5" y="273.5" width="20" height="20"/>
+                            </activityIndicatorView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="I3Q-NK-qFn" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="ZnD-6L-xX6" secondAttribute="leadingMargin" constant="10" id="0cL-OB-e3w"/>
+                            <constraint firstItem="I3Q-NK-qFn" firstAttribute="top" secondItem="Leo-ar-Rhm" secondAttribute="bottom" constant="10" id="3hV-ce-f3D"/>
+                            <constraint firstItem="DS9-AP-XDS" firstAttribute="centerY" secondItem="ZnD-6L-xX6" secondAttribute="centerY" multiplier="0.85" id="HTn-pa-r9f"/>
+                            <constraint firstItem="JbP-fQ-jLf" firstAttribute="centerY" secondItem="ZnD-6L-xX6" secondAttribute="centerY" id="Iza-dn-S2c"/>
+                            <constraint firstItem="JbP-fQ-jLf" firstAttribute="centerX" secondItem="ZnD-6L-xX6" secondAttribute="centerX" id="WOg-fp-QcH"/>
+                            <constraint firstAttribute="trailingMargin" relation="greaterThanOrEqual" secondItem="I3Q-NK-qFn" secondAttribute="trailing" constant="10" id="lU0-XN-LgL"/>
+                            <constraint firstItem="I3Q-NK-qFn" firstAttribute="centerX" secondItem="ZnD-6L-xX6" secondAttribute="centerX" id="x61-da-mlI"/>
+                            <constraint firstItem="DS9-AP-XDS" firstAttribute="centerX" secondItem="ZnD-6L-xX6" secondAttribute="centerX" id="xkG-vc-uYS"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="f3i-Lj-PI2"/>
+                    <connections>
+                        <outlet property="activityIndicator" destination="DS9-AP-XDS" id="7uy-AN-Tem"/>
+                        <outlet property="statusLabel" destination="I3Q-NK-qFn" id="Lic-xN-WXg"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="znQ-7a-1uU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1992.8" y="-0.44977511244377816"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="pnP-h9-yvZ">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Cow-Ec-7NX" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="2im-bR-zrX">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="vXZ-lx-hvc" kind="relationship" relationship="rootViewController" id="srn-Jz-SK9"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eDm-Au-7Hc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="140" y="0.44977511244377816"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="ellipsis.message" catalog="system" width="128" height="116"/>
+        <image name="key.icloud" catalog="system" width="128" height="90"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
