@@ -31,7 +31,7 @@ struct App {
     }()
     
     static let baseURL: String = {
-        return "https://loop-server-dev-gedmh.ondigitalocean.app/"
+        return "https://iauth.loopmessage.com/"
     }()
     
     static let isSimulator: Bool = {
