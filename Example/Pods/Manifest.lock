@@ -1,0 +1,16 @@
+PODS:
+  - iMessageAuth (0.9.0)
+
+DEPENDENCIES:
+  - iMessageAuth (from `../`)
+
+EXTERNAL SOURCES:
+  iMessageAuth:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  iMessageAuth: 4b9b31ca070cb29d77fa7b27e4829ce3038986a0
+
+PODFILE CHECKSUM: c79d70bc6a2bcfc99e43305f085f6a33215554d0
+
+COCOAPODS: 1.11.2

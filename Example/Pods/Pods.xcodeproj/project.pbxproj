@@ -1,0 +1,710 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		11F4D1DE2672D3D24E57A1FECC236ABD /* UrlSessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 865414F1E2F29D95C3BFC723A8A92B8C /* UrlSessionManager.swift */; };
+		166A5A61F3E0B7CAC00F26F2ADE6C17C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A16CB039EE404A9DC4A7E8211A9D64CF /* Foundation.framework */; };
+		1DB81251D4920DE7BBF73F5FEC829CC0 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F95205B22C5D62261F6443264A8B962 /* MessageUI.framework */; };
+		37065AC86254A62802A530365CFEA1C4 /* JSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44EE5E8F17D9062BCD523445BB4AD09C /* JSON.swift */; };
+		3A1750A0BB5C6FA233B444454215F208 /* App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33AC9170125412C5BF9EAF9C2899B21C /* App.swift */; };
+		3A3D8DA189EE05634ABFCC4660E9D3A6 /* TokenValidation.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4EC95608319208D2C0757A177F5B4FC /* TokenValidation.swift */; };
+		42BA5A1C1EF595DB71F20C1AD7D70298 /* AppleMessagesAuth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C9109FC2C1DB0F662F64612015F3BF7 /* AppleMessagesAuth.swift */; };
+		499E13948EB2CFB1000C448731A6287B /* CheckAuth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ED0BCA7F322366E27B8E15847D976A5 /* CheckAuth.swift */; };
+		4BC63D8AE770C5121BDC6DAD34791E86 /* InitAuth.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6213FD4020D8846D47045875F934CC8 /* InitAuth.swift */; };
+		6AB35CDA7E0E6FD6A46F7722F6340351 /* ComposerHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = C535E6881178F6EA57C1B1FF8BBB493F /* ComposerHelper.swift */; };
+		6FCD08451A347A281611DFC80A09260E /* Messages.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BD5A4CE120146736C2F6F98E052BDC9B /* Messages.framework */; };
+		881193647C18F89B0622B60B6D898AE1 /* Pods-iMessageAuth_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = DE5B1D3ED746F57E717D19DEC542CF6C /* Pods-iMessageAuth_Example-dummy.m */; };
+		9ABC192238E4691F1A9BD2CA4ADD17B0 /* iMessageAuth-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 73EEF0ACC5813F09087B11982274687F /* iMessageAuth-dummy.m */; };
+		B947FFD2EE91EBC166712767D196990A /* UIView+Parent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F9D2398F65F5559ECE9A4FA013E7FCC /* UIView+Parent.swift */; };
+		BD32A5005F819B864BEEE1768520AD4F /* iMessageAuth-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B83E7B340F6D8B96B96AC001B80DF968 /* iMessageAuth-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BE1DB58B0C3EA8B5EFE00D87C8958A13 /* HTTPHeaderName.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F579FC250B1001EB49A6B350EAF92D7 /* HTTPHeaderName.swift */; };
+		C0B07B336EC9DE7B1B19024E3A6A040D /* GeneralErrorResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = A53C41D0248722202C7953CAFEF57E6B /* GeneralErrorResponse.swift */; };
+		D1434D31E588D07A8CB2C26A2AA8B93F /* Pods-iMessageAuth_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 2D3736AF23543B046F07D9655134D88B /* Pods-iMessageAuth_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E1A2D54E8B4D9132C0CB2A8A12F41CFE /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 445BF7DE2D0883FC3BB689FA2E0FFADB /* Router.swift */; };
+		E1E460D5DE88ABC16CD587059F5947D8 /* ErrorCodes.swift in Sources */ = {isa = PBXBuildFile; fileRef = D475163A6A0A5C9C0FBBD94FA807F36B /* ErrorCodes.swift */; };
+		E425AE838FFF150240A1F9C92F4B725D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 972D35F7240A4A963B30D5CAC9850772 /* UIKit.framework */; };
+		E4A0D0C963AC66485B703909BA9CF52C /* HTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C66F6D089F3CC86EE28D59777898442 /* HTTPMethod.swift */; };
+		F81B745AD06FBDAB06F340B7F2AE9890 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A16CB039EE404A9DC4A7E8211A9D64CF /* Foundation.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		700F621800196306EC6B9E33DA0F0859 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3CBF32367D715AEF105A767F56AE7ABC;
+			remoteInfo = iMessageAuth;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0496C4F236DEC5BE2C93F4E24EB68A99 /* iMessageAuth.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = iMessageAuth.debug.xcconfig; sourceTree = "<group>"; };
+		0DE69B9F04045690151B81BC11C27FD1 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		0F95205B22C5D62261F6443264A8B962 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/MessageUI.framework; sourceTree = DEVELOPER_DIR; };
+		0F9D2398F65F5559ECE9A4FA013E7FCC /* UIView+Parent.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "UIView+Parent.swift"; sourceTree = "<group>"; };
+		28D377CAA755C3A38411AD4C9D44266C /* Pods-iMessageAuth_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-iMessageAuth_Example-Info.plist"; sourceTree = "<group>"; };
+		2D3736AF23543B046F07D9655134D88B /* Pods-iMessageAuth_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-iMessageAuth_Example-umbrella.h"; sourceTree = "<group>"; };
+		2F579FC250B1001EB49A6B350EAF92D7 /* HTTPHeaderName.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = HTTPHeaderName.swift; sourceTree = "<group>"; };
+		33AC9170125412C5BF9EAF9C2899B21C /* App.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = App.swift; sourceTree = "<group>"; };
+		445BF7DE2D0883FC3BB689FA2E0FFADB /* Router.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
+		44EE5E8F17D9062BCD523445BB4AD09C /* JSON.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = JSON.swift; sourceTree = "<group>"; };
+		4D16F5EBB98D1CC0693A8707E501099D /* iMessageAuth.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = iMessageAuth.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		5B238B721C57ACBFC2DAEC8847DE747F /* Pods-iMessageAuth_Example */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-iMessageAuth_Example"; path = Pods_iMessageAuth_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5C9109FC2C1DB0F662F64612015F3BF7 /* AppleMessagesAuth.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AppleMessagesAuth.swift; path = Sources/iMessageAuth/AppleMessagesAuth.swift; sourceTree = "<group>"; };
+		7252647D4727319BC3A9042E6932AF25 /* Pods-iMessageAuth_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-iMessageAuth_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		73EEF0ACC5813F09087B11982274687F /* iMessageAuth-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "iMessageAuth-dummy.m"; sourceTree = "<group>"; };
+		84350D5B7CDD387A649E8BDBA3C4EB24 /* Pods-iMessageAuth_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-iMessageAuth_Example.modulemap"; sourceTree = "<group>"; };
+		865414F1E2F29D95C3BFC723A8A92B8C /* UrlSessionManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = UrlSessionManager.swift; sourceTree = "<group>"; };
+		8C66F6D089F3CC86EE28D59777898442 /* HTTPMethod.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = HTTPMethod.swift; sourceTree = "<group>"; };
+		8D248F64CDD2ADC3956E81021EA8191F /* iMessageAuth */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = iMessageAuth; path = iMessageAuth.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8D87CF40A9F702CACC581DED6A9FB0E4 /* Pods-iMessageAuth_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-iMessageAuth_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		972D35F7240A4A963B30D5CAC9850772 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9ED0BCA7F322366E27B8E15847D976A5 /* CheckAuth.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CheckAuth.swift; sourceTree = "<group>"; };
+		A16CB039EE404A9DC4A7E8211A9D64CF /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		A53C41D0248722202C7953CAFEF57E6B /* GeneralErrorResponse.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = GeneralErrorResponse.swift; sourceTree = "<group>"; };
+		A82B99B561475958A633357B9DEBFB5E /* iMessageAuth.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = iMessageAuth.modulemap; sourceTree = "<group>"; };
+		B4EC95608319208D2C0757A177F5B4FC /* TokenValidation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TokenValidation.swift; sourceTree = "<group>"; };
+		B6213FD4020D8846D47045875F934CC8 /* InitAuth.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = InitAuth.swift; sourceTree = "<group>"; };
+		B822A0591366017CC9EA96882A6C3575 /* iMessageAuth.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = iMessageAuth.release.xcconfig; sourceTree = "<group>"; };
+		B83E7B340F6D8B96B96AC001B80DF968 /* iMessageAuth-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "iMessageAuth-umbrella.h"; sourceTree = "<group>"; };
+		BD5A4CE120146736C2F6F98E052BDC9B /* Messages.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Messages.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Messages.framework; sourceTree = DEVELOPER_DIR; };
+		C535E6881178F6EA57C1B1FF8BBB493F /* ComposerHelper.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ComposerHelper.swift; sourceTree = "<group>"; };
+		C63C53645D2B3C4828D4E7241E75AA30 /* Pods-iMessageAuth_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-iMessageAuth_Example-frameworks.sh"; sourceTree = "<group>"; };
+		C89D5C0122932EC48CF71BAE4F502CDD /* iMessageAuth-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "iMessageAuth-Info.plist"; sourceTree = "<group>"; };
+		CC27BC7296FCDD17FBDC119BBEB4A2CD /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		D475163A6A0A5C9C0FBBD94FA807F36B /* ErrorCodes.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ErrorCodes.swift; path = Sources/iMessageAuth/ErrorCodes.swift; sourceTree = "<group>"; };
+		DE5B1D3ED746F57E717D19DEC542CF6C /* Pods-iMessageAuth_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-iMessageAuth_Example-dummy.m"; sourceTree = "<group>"; };
+		DF9641ECC795554D498BEA2F25865A83 /* iMessageAuth-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "iMessageAuth-prefix.pch"; sourceTree = "<group>"; };
+		ED1E12338554CB10973E66B895C66DF4 /* Pods-iMessageAuth_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-iMessageAuth_Example.release.xcconfig"; sourceTree = "<group>"; };
+		ED572D34F76C62C61ACBD0AD7ED075E1 /* Pods-iMessageAuth_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-iMessageAuth_Example.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4D499FEDBE4020D53F7DF35D0A94DB40 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F81B745AD06FBDAB06F340B7F2AE9890 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F179EFE9AD9D9EE9C587621D409ADE60 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				166A5A61F3E0B7CAC00F26F2ADE6C17C /* Foundation.framework in Frameworks */,
+				6FCD08451A347A281611DFC80A09260E /* Messages.framework in Frameworks */,
+				1DB81251D4920DE7BBF73F5FEC829CC0 /* MessageUI.framework in Frameworks */,
+				E425AE838FFF150240A1F9C92F4B725D /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		08B9525C5EAA3C3927CDE29F8936990B /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				2F579FC250B1001EB49A6B350EAF92D7 /* HTTPHeaderName.swift */,
+				8C66F6D089F3CC86EE28D59777898442 /* HTTPMethod.swift */,
+				44EE5E8F17D9062BCD523445BB4AD09C /* JSON.swift */,
+				445BF7DE2D0883FC3BB689FA2E0FFADB /* Router.swift */,
+				865414F1E2F29D95C3BFC723A8A92B8C /* UrlSessionManager.swift */,
+			);
+			name = Network;
+			path = Sources/iMessageAuth/Network;
+			sourceTree = "<group>";
+		};
+		0A997B6ED4F171F26DA276083039CC0B /* Heplers */ = {
+			isa = PBXGroup;
+			children = (
+				33AC9170125412C5BF9EAF9C2899B21C /* App.swift */,
+				C535E6881178F6EA57C1B1FF8BBB493F /* ComposerHelper.swift */,
+			);
+			name = Heplers;
+			path = Sources/iMessageAuth/Heplers;
+			sourceTree = "<group>";
+		};
+		10406827ED4319E889CC46A31E7C30B4 /* iMessageAuth */ = {
+			isa = PBXGroup;
+			children = (
+				5C9109FC2C1DB0F662F64612015F3BF7 /* AppleMessagesAuth.swift */,
+				D475163A6A0A5C9C0FBBD94FA807F36B /* ErrorCodes.swift */,
+				A16A9E8FC2FF7E4E06EBE229B8D3BB36 /* Extensions */,
+				0A997B6ED4F171F26DA276083039CC0B /* Heplers */,
+				DB1E26BCF2A67E9BD41A6898C84477EC /* Models */,
+				08B9525C5EAA3C3927CDE29F8936990B /* Network */,
+				43387D4ADFC607EA7182577BAA5DB782 /* Pod */,
+				29BA9E354CDA55C04D0B97C939CDA5E5 /* Support Files */,
+			);
+			name = iMessageAuth;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		27086238E0B3EC4686443C5DF8260056 /* Pods-iMessageAuth_Example */ = {
+			isa = PBXGroup;
+			children = (
+				84350D5B7CDD387A649E8BDBA3C4EB24 /* Pods-iMessageAuth_Example.modulemap */,
+				8D87CF40A9F702CACC581DED6A9FB0E4 /* Pods-iMessageAuth_Example-acknowledgements.markdown */,
+				7252647D4727319BC3A9042E6932AF25 /* Pods-iMessageAuth_Example-acknowledgements.plist */,
+				DE5B1D3ED746F57E717D19DEC542CF6C /* Pods-iMessageAuth_Example-dummy.m */,
+				C63C53645D2B3C4828D4E7241E75AA30 /* Pods-iMessageAuth_Example-frameworks.sh */,
+				28D377CAA755C3A38411AD4C9D44266C /* Pods-iMessageAuth_Example-Info.plist */,
+				2D3736AF23543B046F07D9655134D88B /* Pods-iMessageAuth_Example-umbrella.h */,
+				ED572D34F76C62C61ACBD0AD7ED075E1 /* Pods-iMessageAuth_Example.debug.xcconfig */,
+				ED1E12338554CB10973E66B895C66DF4 /* Pods-iMessageAuth_Example.release.xcconfig */,
+			);
+			name = "Pods-iMessageAuth_Example";
+			path = "Target Support Files/Pods-iMessageAuth_Example";
+			sourceTree = "<group>";
+		};
+		29BA9E354CDA55C04D0B97C939CDA5E5 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				A82B99B561475958A633357B9DEBFB5E /* iMessageAuth.modulemap */,
+				73EEF0ACC5813F09087B11982274687F /* iMessageAuth-dummy.m */,
+				C89D5C0122932EC48CF71BAE4F502CDD /* iMessageAuth-Info.plist */,
+				DF9641ECC795554D498BEA2F25865A83 /* iMessageAuth-prefix.pch */,
+				B83E7B340F6D8B96B96AC001B80DF968 /* iMessageAuth-umbrella.h */,
+				0496C4F236DEC5BE2C93F4E24EB68A99 /* iMessageAuth.debug.xcconfig */,
+				B822A0591366017CC9EA96882A6C3575 /* iMessageAuth.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/iMessageAuth";
+			sourceTree = "<group>";
+		};
+		2FBC3EB63B8B2F64ADCA4867E8F0E37C /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				27086238E0B3EC4686443C5DF8260056 /* Pods-iMessageAuth_Example */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		43387D4ADFC607EA7182577BAA5DB782 /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				4D16F5EBB98D1CC0693A8707E501099D /* iMessageAuth.podspec */,
+				CC27BC7296FCDD17FBDC119BBEB4A2CD /* LICENSE */,
+				0DE69B9F04045690151B81BC11C27FD1 /* README.md */,
+			);
+			name = Pod;
+			sourceTree = "<group>";
+		};
+		4FE9ABED4EFA6E1D53332424221601B8 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				A16CB039EE404A9DC4A7E8211A9D64CF /* Foundation.framework */,
+				BD5A4CE120146736C2F6F98E052BDC9B /* Messages.framework */,
+				0F95205B22C5D62261F6443264A8B962 /* MessageUI.framework */,
+				972D35F7240A4A963B30D5CAC9850772 /* UIKit.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		69F784B74B4C48AEDFB0EAE92436DCC9 /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				10406827ED4319E889CC46A31E7C30B4 /* iMessageAuth */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		A16A9E8FC2FF7E4E06EBE229B8D3BB36 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				0F9D2398F65F5559ECE9A4FA013E7FCC /* UIView+Parent.swift */,
+			);
+			name = Extensions;
+			path = Sources/iMessageAuth/Extensions;
+			sourceTree = "<group>";
+		};
+		BA4F31F07263C99FC76E66D632A59F09 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4FE9ABED4EFA6E1D53332424221601B8 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				69F784B74B4C48AEDFB0EAE92436DCC9 /* Development Pods */,
+				BA4F31F07263C99FC76E66D632A59F09 /* Frameworks */,
+				F29E62D26B42EBC0F57C2B94337DA5AF /* Products */,
+				2FBC3EB63B8B2F64ADCA4867E8F0E37C /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		DB1E26BCF2A67E9BD41A6898C84477EC /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				9ED0BCA7F322366E27B8E15847D976A5 /* CheckAuth.swift */,
+				A53C41D0248722202C7953CAFEF57E6B /* GeneralErrorResponse.swift */,
+				B6213FD4020D8846D47045875F934CC8 /* InitAuth.swift */,
+				B4EC95608319208D2C0757A177F5B4FC /* TokenValidation.swift */,
+			);
+			name = Models;
+			path = Sources/iMessageAuth/Models;
+			sourceTree = "<group>";
+		};
+		F29E62D26B42EBC0F57C2B94337DA5AF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8D248F64CDD2ADC3956E81021EA8191F /* iMessageAuth */,
+				5B238B721C57ACBFC2DAEC8847DE747F /* Pods-iMessageAuth_Example */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		69956AD21BC5FC67F53C72085BF47309 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BD32A5005F819B864BEEE1768520AD4F /* iMessageAuth-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EE7020AB8250E51B72B94047FEF605C4 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D1434D31E588D07A8CB2C26A2AA8B93F /* Pods-iMessageAuth_Example-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		3CBF32367D715AEF105A767F56AE7ABC /* iMessageAuth */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AF415EFDCCA9552EF1291B9598CF298D /* Build configuration list for PBXNativeTarget "iMessageAuth" */;
+			buildPhases = (
+				69956AD21BC5FC67F53C72085BF47309 /* Headers */,
+				70FA73B45B6F5694057AE12682D75BA1 /* Sources */,
+				F179EFE9AD9D9EE9C587621D409ADE60 /* Frameworks */,
+				FF5F5783D7A62B6E66B918BF0FA70577 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = iMessageAuth;
+			productName = iMessageAuth;
+			productReference = 8D248F64CDD2ADC3956E81021EA8191F /* iMessageAuth */;
+			productType = "com.apple.product-type.framework";
+		};
+		4F536EB4078432CCD9110F32C6016943 /* Pods-iMessageAuth_Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 16D055635BB34957107BC2184F164C00 /* Build configuration list for PBXNativeTarget "Pods-iMessageAuth_Example" */;
+			buildPhases = (
+				EE7020AB8250E51B72B94047FEF605C4 /* Headers */,
+				77313FE213C366D565291B62AE69F05A /* Sources */,
+				4D499FEDBE4020D53F7DF35D0A94DB40 /* Frameworks */,
+				1919E9AE338E635AF31AD2F58BEFB392 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				24A72C78E3EA329F433C7E139CB35E7A /* PBXTargetDependency */,
+			);
+			name = "Pods-iMessageAuth_Example";
+			productName = Pods_iMessageAuth_Example;
+			productReference = 5B238B721C57ACBFC2DAEC8847DE747F /* Pods-iMessageAuth_Example */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1300;
+				LastUpgradeCheck = 1300;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = F29E62D26B42EBC0F57C2B94337DA5AF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3CBF32367D715AEF105A767F56AE7ABC /* iMessageAuth */,
+				4F536EB4078432CCD9110F32C6016943 /* Pods-iMessageAuth_Example */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1919E9AE338E635AF31AD2F58BEFB392 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FF5F5783D7A62B6E66B918BF0FA70577 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		70FA73B45B6F5694057AE12682D75BA1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3A1750A0BB5C6FA233B444454215F208 /* App.swift in Sources */,
+				42BA5A1C1EF595DB71F20C1AD7D70298 /* AppleMessagesAuth.swift in Sources */,
+				499E13948EB2CFB1000C448731A6287B /* CheckAuth.swift in Sources */,
+				6AB35CDA7E0E6FD6A46F7722F6340351 /* ComposerHelper.swift in Sources */,
+				E1E460D5DE88ABC16CD587059F5947D8 /* ErrorCodes.swift in Sources */,
+				C0B07B336EC9DE7B1B19024E3A6A040D /* GeneralErrorResponse.swift in Sources */,
+				BE1DB58B0C3EA8B5EFE00D87C8958A13 /* HTTPHeaderName.swift in Sources */,
+				E4A0D0C963AC66485B703909BA9CF52C /* HTTPMethod.swift in Sources */,
+				9ABC192238E4691F1A9BD2CA4ADD17B0 /* iMessageAuth-dummy.m in Sources */,
+				4BC63D8AE770C5121BDC6DAD34791E86 /* InitAuth.swift in Sources */,
+				37065AC86254A62802A530365CFEA1C4 /* JSON.swift in Sources */,
+				E1A2D54E8B4D9132C0CB2A8A12F41CFE /* Router.swift in Sources */,
+				3A3D8DA189EE05634ABFCC4660E9D3A6 /* TokenValidation.swift in Sources */,
+				B947FFD2EE91EBC166712767D196990A /* UIView+Parent.swift in Sources */,
+				11F4D1DE2672D3D24E57A1FECC236ABD /* UrlSessionManager.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		77313FE213C366D565291B62AE69F05A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				881193647C18F89B0622B60B6D898AE1 /* Pods-iMessageAuth_Example-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		24A72C78E3EA329F433C7E139CB35E7A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = iMessageAuth;
+			target = 3CBF32367D715AEF105A767F56AE7ABC /* iMessageAuth */;
+			targetProxy = 700F621800196306EC6B9E33DA0F0859 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		09880AAAD815DA4E15E0BF0DDD77588C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = ED1E12338554CB10973E66B895C66DF4 /* Pods-iMessageAuth_Example.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-iMessageAuth_Example/Pods-iMessageAuth_Example-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-iMessageAuth_Example/Pods-iMessageAuth_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		61EB55B5F2936D4D94510820F9BE206A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0496C4F236DEC5BE2C93F4E24EB68A99 /* iMessageAuth.debug.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/iMessageAuth/iMessageAuth-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/iMessageAuth/iMessageAuth-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/iMessageAuth/iMessageAuth.modulemap";
+				PRODUCT_MODULE_NAME = iMessageAuth;
+				PRODUCT_NAME = iMessageAuth;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		7EF8A70E7C68D6A992960E4206DBF5F2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B822A0591366017CC9EA96882A6C3575 /* iMessageAuth.release.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/iMessageAuth/iMessageAuth-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/iMessageAuth/iMessageAuth-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/iMessageAuth/iMessageAuth.modulemap";
+				PRODUCT_MODULE_NAME = iMessageAuth;
+				PRODUCT_NAME = iMessageAuth;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		903A0004D3E6651EFD5D2E16214D101B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		B4EFE046ACF8F37157F6E322C7FCFC28 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		C6022868CE7924A6B50A4E7DB4542103 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = ED572D34F76C62C61ACBD0AD7ED075E1 /* Pods-iMessageAuth_Example.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-iMessageAuth_Example/Pods-iMessageAuth_Example-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-iMessageAuth_Example/Pods-iMessageAuth_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		16D055635BB34957107BC2184F164C00 /* Build configuration list for PBXNativeTarget "Pods-iMessageAuth_Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C6022868CE7924A6B50A4E7DB4542103 /* Debug */,
+				09880AAAD815DA4E15E0BF0DDD77588C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B4EFE046ACF8F37157F6E322C7FCFC28 /* Debug */,
+				903A0004D3E6651EFD5D2E16214D101B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AF415EFDCCA9552EF1291B9598CF298D /* Build configuration list for PBXNativeTarget "iMessageAuth" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				61EB55B5F2936D4D94510820F9BE206A /* Debug */,
+				7EF8A70E7C68D6A992960E4206DBF5F2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}
